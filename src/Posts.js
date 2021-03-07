@@ -21,7 +21,7 @@ function Posts() {
             <p>
                 I am a Front-end Developer who is doing interesting things that
                 matter. I believe the learning curve should never have a negative
-                slope. I am always sharpening my axe(Javascript & React).{" "}
+                slope. I am always sharpening my axe(Javascript/ React).
             </p>
             <div className="engagement">
                 <span><img src={like} alt='like'/> 2000</span>

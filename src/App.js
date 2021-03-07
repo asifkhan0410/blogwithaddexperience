@@ -17,7 +17,7 @@ function App() {
       <Route path='/addexperience'><AddExperienceForm/></Route>
       <Route path ='/'>
       <div className="interviewlist">
-        <Link to = '/addexperience'><div className="addexperience"><button>Share your interview experience with community</button></div></Link>
+        <Link to = '/addexperience'><div className="addexperience"><button className="btn">Share your interview experience with community</button></div></Link>
         <Posts />
         <Posts/>
         <Posts/>
