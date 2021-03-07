@@ -8,7 +8,7 @@ function Posts() {
     function addComment(e){
         e.preventDefault();
         localStorage.setItem('comment', JSON.stringify(comment));
-        setComment('')
+        setComment('');
     }
     return (
     <div className="posts">
