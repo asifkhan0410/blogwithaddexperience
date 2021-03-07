@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Posts from './Posts';
+import Questions from './Questions';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import AddExperienceForm from './AddExperienceForm';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Switch>
+      <Route path='/addexperience'><AddExperienceForm/></Route>
+      <Route path ='/'>
+      <div className="interviewlist">
+        <Link to = '/addexperience'><div className="addexperience"><button>Share your interview experience with community</button></div></Link>
+        <Posts />
+        <Posts/>
+        <Posts/>
+      </div>
+      <Questions/>
+      </Route>
+    </Switch>
     </div>
+    </Router>
   );
 }
 

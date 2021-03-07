@@ -1,38 +1,184 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    justify-content: center;
+  text-align: center;
+  background-color: lightgray;
+  width: 100vw;
+}
+.addexperience{
+  margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.addexperience>button{
+  padding: 10px 15px;
+    border: none;
+    background-color: darkturquoise;
+    color: white;
+    outline-style: none;
+    border-radius: 5px;
+}
+.posts{
+  display: flex;
+  padding: 20px;
+  box-shadow: 4px 4px 4px darkturquoise;
+  background-color: white;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.profilepicture{
+  height: 40px;
+    margin-right: 12px;
+    width: 40px;
+    background-color: gray;
+    border-radius: 50%;
+}
+.profilepicture>img{
+  width: inherit;
+}
+.post{
+  display: flex;
+    flex-direction: column;
+    text-align: initial;  
+}
+.post>a{
+  text-decoration: none;
+  color: inherit;
+}
+.post>h4{
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.4px;
+    color: darkslategray;
+}
+.post>h6{
+  margin: 0;
+    color: darkgray;
+    font-weight: 200;
+    letter-spacing: 0.8px;
+}
+.post>h2{
+  margin: 10px 0px;
+}
+.post>span{
+  color: dodgerblue;
+}
+.post>p{
+ color:grey;
+}
+.post .engagement{
+  display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-bottom: 10px;
+}
+.engagement >span{
+  display: flex;
+    align-items: center;
+    color: gray;
+}
+.comment{
+  display: flex;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.comment>input{
+  width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    outline-style: none;
+    border-radius: 5px;
+}
+.comment>button{
+  margin: 10px;
+    padding: 0px 15px;
+    border: none;
+    background-color: darkturquoise;
+    color: white;
+    outline-style: none;
+    border-radius: 5px;
+}
+.questions{
+  padding: 20px;
+  background-color: white;
+  margin: 87px 30px;
+  text-align: left;
+  height: fit-content;
+}
+.questions>input{
+    margin: 10px;
+    padding: 10px 10px 10px 38px;
+    border: 1px solid lightgray;
+    outline-style: none;
+    border-radius: 5px;
+}
+.questions::before{
+  content: url(./images/search.svg);
+  position: absolute;
+  margin: 13px;
+
+}
+.questions>a{
+  text-decoration: none;
+}
+.question{
+  color: darkturquoise;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* Experience Form */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addexperienceform{
+  height: fit-content;
+  background-color: white;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+}
+.addexperienceform>h1{
+  margin: 8px;
+  color: dimgrey;
+    padding: 5px 35px;
+    font-size: 1.6rem;
+    font-weight: 100;
+    border-bottom: 3px solid lightgrey;
+}
+.addexperienceform>form{
+  display: flex;
+  width: 350px;  
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 50px 40px;
+}
+.addexperienceform>form>label{
+  display: flex;
+  padding-bottom: 25px;
+  font-weight: 700;
+    letter-spacing: 1px;
+    flex-direction: column;
+    text-align: left;
+}
+.addexperienceform>form>label>input{
+  padding: 7px;
+    border-radius: 5px;
+    font-family: inherit;
+    margin-top: 5px;
+    outline:none;
+    border: 2px solid lightgrey;
+}
+.details{
+  padding: 7px;
+  border-radius: 5px;
+  font-family: inherit;
+  margin-top: 5px;
+  outline: none;
+  border: 2px solid lightgrey;
+  height: 100px;
 }
